@@ -2,7 +2,7 @@
 
 ### Problem Statement :
 
-Our mini project is an online event management system project that serves the functionality 
+This project is an online event management system project that serves the functionality 
 of an event manager.
 The system allows only the event manager to login on the application. The system helps in the 
 management of dates of events .
