@@ -1,45 +1,53 @@
 # Event Management System
+**Technology:** Java, Java Collections Framework
 
-### Problem Statement :
+## Problem Statement
+This project is an **online event management system** that serves the functionality of an event manager. The system allows only the event manager to log in to the application. It helps in managing the dates of events and provides basic functionalities required for different event types such as Marriage, Parties, Conference meetings, etc. The system allows the event manager to enter the date and venue of each event.
 
-This project is an online event management system project that serves the functionality 
-of an event manager.
-The system allows only the event manager to login on the application. The system helps in the 
-management of dates of events .
-The project provides most of the basic functionality required for an 
-event type[Marriage,Parties,Conference meetings,etc.]
-The system then allows you to enter the date and venue of the event. 
+---
 
-### The key features and functions of the project are :
-1. Entering customer details which mainly includes date ,venue of event.
+## Key Features and Functions
+- Enter customer details, including the date and venue of the event.  
+- Store customers in a **queue** based on the date of the event.  
+- Take full payment once the event is completed.  
+- Generate an invoice for the customer after booking.  
+- Display a list of upcoming events.  
+- Maintain a record of payments to date.  
+- Display all successfully completed events.  
+- Calculate average ratings given by customers.  
 
-2. The customers are stored in a queue based on the date of the event.
+---
 
-3. Takes full payment once the event is done.
+## List of Data Structures
 
-4. The customer is given an invoice once the booking is done.
+### Queue using Linked List
+A Queue is a linear data structure that follows the **First In First Out (FIFO)** principle.  
+- The customer whose event date is first enters the queue first and leaves first once the event is completed.  
 
-5. Displays the list of upcoming events.
+### Linked List
+A Linked List is a dynamic structure where each node contains data and a pointer to the next node.  
+- Used to line up all events and store completed events.  
+- **Time Complexity of Search:** O(n)
 
-6. Keeps the record of the payments till date.
+### ArrayList (Collection Framework)
+ArrayList allows dynamic resizing, unlike arrays where the size must be predefined.  
+- Used to store payments and ratings since the number of customers is not fixed.  
+- Supports flexible operations without specifying size in advance.  
 
-7. Displays all the successful events done.
+---
 
-8. Calculates average ratings given by customers.
+## How It Works
+1. The event manager logs into the system.  
+2. Customer details (event date and venue) are entered.  
+3. Customers are queued based on event dates.  
+4. Payments are recorded once events are completed.  
+5. Invoices are generated for customers.  
+6. Upcoming events, completed events, and payment records can be viewed.  
+7. Average ratings are calculated for events.  
 
-### List of all the data structures 
+---
 
-Data structures
-
-1. Queue using linked list
-
-A Queue is a linear data structure. This data structure follows a particular order in which the operations are performed. The order is First In First Out (FIFO). It means that the customer whose date of event is first will enter first in queue and will also be leaving the queue first, once the event is done.
-
-2. Linked List
-
-A Linked list is a dynamic arrangement that contains a access link to the structure containing the subsequent items. Every node contains some data and a pointer to the next node of the same data type. The node contains a pointer to the next node means that the node stores the address of the next node in the sequence. To line up all the events we have used a linked list. Also the events which are done are stored in a linked list. Time complexity of search:O(n)
-
-3. Arraylist (Collection framework)
-
-The main advantages of ArrayList is, if we declare an array then it is needed to mention the size but in ArrayList, it is not necessary to mention the size of 
-ArrayList if you want to mention the size then you can do it.As the number of customers is not fixed. We have used arraylist to store payments and ratings.
+## Future Enhancements
+- Add support for multiple event managers.  
+- Implement notifications for upcoming events.  
+- Integrate a GUI for easier user interaction.  
